@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyWebsite</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="nav">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="">
+        </div>
+        <ul class="list">
+            <li class="selected"><a class="selected" href="#">首页</a></li>
+            <li><a href="#">关于我</a></li>
+            <li><a href="#">简历</a></li>
+            <li><a href="#">作品</a></li>
+            <li><a href="#">联系我</a></li>
+        </ul>
+        <div id="nav-btn">
+            <span class="top-span"></span>
+            <span class="middle-span"></span>
+            <span class="bottom-span"></span>
+        </div>
+    </div>
+    <div id="sp">123456789</div>
+    <button id="btn" style="position: absolute;right:0;">dsadas</button>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/rem.js"></script>
+    <script>
+        var isNav = true;    //判断侧边菜单栏是否打开
+        var $nav = $("#nav");
+        $("#nav-btn").on("click",function(){
+            if(isNav){
+                $nav.stop().animate({
+                    left:0,
+//                    marginLeft:0
+                },500,function(){
+                    isNav = !isNav;
+                });
+            }else{
+                $nav.stop().animate({
+                    left:-200,
+//                    marginLeft:-200
+            },500,function(){
+                    isNav = !isNav;
+                });
+            }
+
+        })
+    </script>
+</body>
+</html>

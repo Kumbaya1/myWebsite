@@ -1,0 +1,78 @@
+html,body{
+    height:1000px;
+    background: #ccc;
+}
+#nav{
+    background: #333;
+    width:200px;
+    height:100%;
+    position: fixed;
+    left:-200px;
+    /*margin-left:-200px;*/
+    /*float: left;*/
+}
+#sp{
+    /*float: left;*/
+}
+.logo{
+    width:50%;
+    margin:25px auto;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    border-radius:50%;
+    border:10px solid #292929;
+}
+.logo img{
+    width:100%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    border-radius:50%;
+    border:5px solid #ccc;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing: border-box;
+}
+.list li{
+    font-size:15px;
+    height:42px;
+    padding-left:20px;
+    margin-bottom:12px;
+}
+.list li.selected{
+    background: #272727;
+    border-left:2px solid #ed5565;
+}
+.list li a{
+    display: block;
+    color: #fff;
+    font-size:100%;
+    padding:6px 13px;
+    line-height:32px;
+    font-family:KaiTi;
+
+}
+.list li a.selected{
+    color: #ed5565;
+}
+.list li a:hover{
+    color: #ed5565;
+}
+#nav-btn span{
+    display: block;
+    width:40px;
+    height: 7px;
+    background: #fff;
+    margin-bottom:5px;
+}
+#nav-btn{
+    position: absolute;
+    top:10px;
+    left:210px;
+    cursor: pointer;
+}
